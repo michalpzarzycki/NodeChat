@@ -1,9 +1,11 @@
+const  {main}  = require('./mongo')
 const express = require('express')
 const app = express()
 const port = 3000
-
+main()
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+   
+    res.send('Hello World!')
 })
 
 app.listen(port, () => {
